@@ -11,4 +11,11 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import <CoreLocation/CoreLocation.h>
+#import <MapKit/MKMapView.h>
+    #import "MobileCoreServices/UTCoreTypes.h"
+    #import "MobileCoreServices/UTType.h"
+    #import "RespondConstants.h"
+    #import "PbConnectionDelegate.h"
+    #import "ConfigurationData.h"
 #endif

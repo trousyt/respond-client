@@ -8,8 +8,6 @@
 
 #import "RespondAppDelegate.h"
 
-#import "RespondMasterViewController.h"
-
 @implementation RespondAppDelegate
 
 @synthesize window = _window;
@@ -17,13 +15,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    //self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 
-    RespondMasterViewController *masterViewController = [[RespondMasterViewController alloc] initWithNibName:@"RespondMasterViewController" bundle:nil];
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
-    self.window.rootViewController = self.navigationController;
-    [self.window makeKeyAndVisible];
+    //RespondRequestViewController *masterViewController = [[RespondRequestViewController alloc] initWithNibName:@"RespondRequestViewController" bundle:nil];
+    //self.navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
+    //self.window.rootViewController = self.navigationController;
+    
+    /*RespondSpringboardViewController *controller = [[RespondSpringboardViewController alloc] initWithNibName:@"RespondSpringboardViewController" bundle:nil];
+    self.window.rootViewController = controller;*/
+    
+    /*RespondDetailViewController *controller = [[RespondDetailViewController alloc] initWithNibName:@"RespondRequestViewController" bundle:nil];
+    self.window.rootViewController = controller;*/
+    
+    //[self.window makeKeyAndVisible];
     return YES;
 }
 
